@@ -1,15 +1,141 @@
 .header {
-  background-color:#6877FA;
-  height: 5vh;
-  display: flex;
-  align-items: center;
+    background-color: #6877fa;
+    height: 5vh;
+    display: flex;
+    align-items: center;
 }
 
 .header h2 {
-  color: #fff;
-  font-weight: 400;
+    color: #fff;
+    font-weight: 400;
 }
 
 .container {
-  padding: 0 10%;
+    padding: 0 10%;
+}
+
+.main {
+    display: flex;
+}
+
+.main-list {
+    width: 50%;
+    height: 95vh;
+}
+
+.main-list:first-child {
+    border-right: 4px solid #c4c4c4;
+}
+
+.main-list h3 {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.main-list input {
+    margin-top: 2.5rem;
+    outline: none;
+    border: none;
+    border-bottom: 3.5px solid #6877fa;
+    padding: 0.25rem;
+    width: 100%;
+    font-size: 25px;
+}
+
+.main-list .search-input {
+    width: 80%;
+    position: relative;
+}
+
+.main-list .search {
+    color: #6877fa;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.channels-list {
+    margin-top: 1rem;
+    height: 80%;
+    overflow: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+.channels-list::-webkit-scrollbar {
+    display: none;
+}
+
+.channel {
+    width: 80%;
+    border: 1px solid #6877fa;
+    display: flex;
+    padding: 0.2rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    box-shadow: 0px 4px 4px 0px rgba(220, 217, 217, 0.76);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(220, 217, 217, 0.76);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(220, 217, 217, 0.76);
+}
+
+.channel .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #6877fa;
+    align-items: center;
+    cursor: pointer;
+}
+
+.channel .icon .plus-icon {
+    color: #6877fa;
+    font-weight: normal;
+}
+
+.channel .icon .minus-icon {
+    color: #fa6868;
+    font-weight: normal;
+}
+
+.mainitem2 {
+    margin-left: 1.5rem;
+}
+
+.footer {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .restore {
+    width: 18%;
+    height: 50px;
+    border: 1px solid #6877fa;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer .submit {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+    text-align: center;
+    font-size: 25px;
+    background-color: #6877fa;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
